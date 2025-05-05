@@ -1,0 +1,87 @@
+{
+  "task": "Caption_Fashion_Outfit_Analysis",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Generate a technically precise, industry-standard analysis of fashion outfit elements without describing the model/person wearing them. Focus entirely on garments, textile qualities, construction techniques, styling approach, and design references as if writing for a professional fashion lookbook or designer archive.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 300 tokens",
+  "structure": {
+    "primary_garments": "Begin by identifying the foundational pieces with their precise classifications, cuts, and silhouettes",
+    "construction_details": "Analyze specific design elements using proper fashion terminology for seaming, closures, and technical construction methods",
+    "textile_properties": "Describe fabric types, textures, patterns, weights, and material qualities with expert precision",
+    "color_treatment": "Detail the colorways, tonal relationships, and color-blocking techniques employed",
+    "proportional_analysis": "Examine the dimensional relationships between pieces, volume distribution, and structural balance",
+    "accessory_integration": "Catalog footwear, bags, jewelry, and other accessories as components of the overall design concept",
+    "styling_methodology": "Explain the compositional strategy, layering approach, and intentional styling decisions",
+    "design_lineage": "Conclude with relevant fashion historical context, designer influences, and stylistic movements evident in the ensemble"
+  },
+  "tone": {
+    "voice": "Technical fashion design expert with emphasis on construction and composition",
+    "approach": "Analytical, precise, and industry-focused while maintaining narrative cohesion",
+    "terminology": "Employ specific technical fashion vocabulary appropriate for atelier or design studio contexts",
+    "perspective": "Present as objective documentation for fashion archives or professional reference"
+  },
+  "subject_isolation": {
+    "approach": "Treat garments and accessories as independent artistic/design objects",
+    "format": "Begin with direct subject identification (e.g., 'A masterfully composed ensemble...')",
+    "prohibited_references": [
+      "model", "person", "wearer", "human", "figure", "individual",
+      "face", "expression", "ethnicity", "gender", "age", "body type"
+    ]
+  },
+  "technical_terminology": {
+    "garment_constructions": [
+      "dart manipulation", "princess seaming", "bias cut", "drop shoulder", "set-in sleeve", 
+      "raglan sleeve", "dolman sleeve", "batwing", "peplum", "empire waist", "basque waist",
+      "leg-of-mutton sleeve", "balloon sleeve", "bishop sleeve", "pagoda sleeve",
+      "box pleat", "inverted pleat", "knife pleat", "godets", "gussets"
+    ],
+    "silhouettes": [
+      "A-line", "shift", "sheath", "column", "trapeze", "tulip", "pencil", "fit-and-flare",
+      "ballgown", "mermaid", "trumpet", "cocoon", "bodycon", "blouson", "oversized"
+    ],
+    "fabrics": [
+      "crepe", "chiffon", "organza", "tulle", "taffeta", "satin", "charmeuse", "georgette",
+      "tweed", "bouclé", "jacquard", "brocade", "damask", "poplin", "gabardine", "twill",
+      "jersey", "ponte", "leather", "suede", "nappa", "nubuck", "patent", "calfskin"
+    ],
+    "techniques": [
+      "color-blocking", "monochromatic styling", "tonal dressing", "pattern mixing",
+      "juxtaposition of volume", "proportion play", "layering", "deconstructed elements",
+      "mixed media", "contrast piping", "raw edge finishing", "avant-garde draping"
+    ]
+  },
+  "design_references": {
+    "silhouette_traditions": [
+      "1950s New Look", "1960s Mod", "1970s Disco", "1980s Power Dressing", 
+      "1990s Minimalism", "Y2K Futurism", "2010s Athleisure", "Contemporary Deconstruction"
+    ],
+    "design_schools": [
+      "Bauhaus", "Antwerp Six", "Japanese Avant-Garde", "American Sportswear",
+      "French Couture", "Italian Tailoring", "British Punk", "Scandinavian Minimalism"
+    ],
+    "notable_houses": [
+      "Balenciaga", "Chanel", "Dior", "Saint Laurent", "Prada", "Comme des Garçons",
+      "Margiela", "Dries Van Noten", "Alexander McQueen", "Jil Sander", "Bottega Veneta"
+    ]
+  },
+  "example": "A masterfully composed ensemble built around a structured black midi-length dress with tailored darts and clean vertical lines creating a columnar silhouette. This foundation piece features long sleeves, a modest neckline, and precision-cut hem falling just below the knee. Layered atop is a standout light silk habotai or charmeuse blouse with abstract botanical print in muted neutrals, constructed with dramatic volume through gathered blouson sleeves and fluid drape. The technical counterpoint between the rigid structure of the black undergarment and the billowing proportions of the statement sleeves demonstrates considered tension in volume distribution. The textile interplay continues with a graphic black and white geometric backdrop that contextualizes the outfit within a bold visual framework. Accessories amplify the design narrative: burnt-orange suede platform ankle boots featuring substantial block heels approximately 10cm in height with minimal detailing, paired with a structured polka dot tote in matching orange with contrasting black circular pattern and leather trim detailing. The composition employs controlled maximalism through the juxtaposition of patterns and textures while maintaining color discipline. The overall design language references 1970s Italian ready-to-wear silhouettes with contemporary pattern-mixing techniques reminiscent of Dries Van Noten's textile manipulations and Prada's intellectual approach to graphic elements.",
+  "best_practices": [
+    "Maintain exclusive focus on garments and accessories without describing the wearer",
+    "Begin with foundational pieces before addressing layering and accessories",
+    "Use precise industry terminology for construction techniques and textile properties",
+    "Analyze the relationship between different pieces as a cohesive design concept",
+    "Note intentional styling techniques and their visual impact within the composition",
+    "Reference specific design traditions only when clearly evident in construction methods",
+    "Discuss color relationships and pattern interactions as deliberate design choices",
+    "Consider dimensional aspects including volume distribution, proportion, and silhouette"
+  ],
+  "compliance_checklist": [
+    "Verify no human references remain in the caption",
+    "Confirm all required structural elements are addressed",
+    "Check technical accuracy of garment construction terminology",
+    "Assess appropriateness of fabric and material descriptions",
+    "Validate structural coherence and logical flow of analysis"
+  ],
+  "emphasis": "This caption must function as professional fashion documentation focused solely on the outfit as a design artifact, completely independent of the wearer. It should read as if analyzing a designer's collection piece for industry archives or technical fashion education. The content will be used specifically for training diffusion image generation models to understand the relationship between detailed text descriptions and visual outputs."
+}

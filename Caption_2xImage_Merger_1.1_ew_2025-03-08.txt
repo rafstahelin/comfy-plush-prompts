@@ -1,0 +1,149 @@
+{
+  "task": "Caption_2xImage_Merger",
+  "version": "1.1",
+  "creation_date": "2025-03-08",
+  "last_updated": "2025-03-08",
+  "description": "Analyze TWO INPUT IMAGES, extract specific elements from each, and generate a single unified caption that imagines a new image. The first image contributes ONLY the subject's identity and physical characteristics, while the second image contributes the pose, action, style, environment and overall composition.",
+  "input_requirements": {
+    "input_1": "First image (subject identity and characteristics only)",
+    "input_2": "Second image (pose, action, environment, style, and composition)"
+  },
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 300 tokens",
+  
+  "processing_pipeline": {
+    "phase_1_individual_analysis": {
+      "description": "Analyze each image independently to extract specific elements",
+      "image_1_analysis": {
+        "priority": "Subject identity and physical characteristics ONLY",
+        "elements_to_extract": [
+          "Subject identity (gender, ethnicity, distinctive features)",
+          "Facial features and physical appearance",
+          "Hair color, style, and texture",
+          "Distinctive physical attributes",
+          "Color palette associated with subject's appearance"
+        ],
+        "elements_to_ignore": [
+          "Subject's pose",
+          "Subject's action or gesture",
+          "Subject's expression (unless extremely distinctive)",
+          "Subject's clothing (unless specified as important)",
+          "Environmental context",
+          "Compositional elements"
+        ]
+      },
+      "image_2_analysis": {
+        "priority": "Pose, action, environment, style, and composition",
+        "elements_to_extract": [
+          "Body posture and positioning",
+          "Physical action or gesture",
+          "Expression and emotional quality",
+          "Clothing and accessories",
+          "Setting and location type",
+          "Environmental features and objects",
+          "Lighting quality and direction",
+          "Color palette and atmosphere",
+          "Artistic style and photographic approach",
+          "Compositional techniques"
+        ]
+      }
+    },
+    
+    "phase_2_compatibility_assessment": {
+      "description": "Evaluate how to transpose the subject from image 1 into the pose/action/environment of image 2",
+      "assessment_criteria": [
+        "How the subject's physical characteristics would appear in the pose from image 2",
+        "How to adapt clothing and accessories from image 2 to the subject from image 1",
+        "How lighting from image 2 would interact with subject from image 1",
+        "How the subject from image 1 would fit within the composition of image 2",
+        "How to maintain the artistic style of image 2 while featuring the subject from image 1"
+      ]
+    },
+    
+    "phase_3_integration_planning": {
+      "description": "Plan how to place the subject from image 1 into the exact pose, action, and environment from image 2",
+      "integration_approach": "The subject from image 1 is visualized performing the exact pose/action from image 2, within the exact environment and compositional framework of image 2",
+      "relationship_definition": {
+        "description": "Define how the subject from image 1 relates to the pose/environment from image 2",
+        "key_aspects": [
+          "Subject's positioning matches the pose from image 2",
+          "Subject performs the same action as in image 2",
+          "Subject wears similar clothing/accessories as in image 2",
+          "Subject is placed in the same environment as image 2",
+          "Subject is captured with the same photographic style as image 2"
+        ]
+      }
+    },
+    
+    "phase_4_caption_synthesis": {
+      "description": "Generate a unified caption describing the imagined combined image",
+      "caption_structure": {
+        "opening": "Establish the subject identity from image 1 performing the action/pose from image 2",
+        "physical_description": "Include key physical characteristics of subject from image 1",
+        "pose_and_action": "Describe the pose, gesture, and action from image 2",
+        "clothing_and_styling": "Describe attire and styling from image 2",
+        "environment": "Detail the setting or contextual elements from image 2",
+        "artistic_approach": "Describe the photographic style and technical elements from image 2",
+        "atmosphere": "Convey the overall mood and emotional quality from image 2"
+      }
+    }
+  },
+  
+  "integration_guidelines": {
+    "subject_transposition": {
+      "description": "Place the subject from image 1 into the exact pose, action, and environment from image 2",
+      "key_principles": [
+        "Maintain all physical characteristics of the subject from image 1",
+        "Adopt the exact pose, gesture, and action from image 2",
+        "Place subject in the identical environment from image 2",
+        "Apply the same photographic technique and style from image 2",
+        "Preserve the mood and atmosphere from image 2"
+      ]
+    },
+    "priority_hierarchy": {
+      "from_image_1": [
+        "Subject identity",
+        "Facial features",
+        "Hair characteristics",
+        "Physical build and attributes"
+      ],
+      "from_image_2": [
+        "Pose and body positioning",
+        "Action and gesture",
+        "Expression and emotional quality",
+        "Clothing and accessories",
+        "Environment and setting",
+        "Lighting and atmosphere",
+        "Compositional structure",
+        "Photographic style and technique"
+      ]
+    }
+  },
+  
+  "example": {
+    "image1_description": "Close-up portrait of a young East Asian woman with long black hair and delicate features, wearing minimal makeup with a natural finish.",
+    "image2_description": "Black and white fashion photograph of a model in dramatic pose wearing an elegant evening gown with a cinched waist and flowing skirt, against a textured backdrop with professional studio lighting.",
+    "merged_caption": "A striking black and white fashion portrait of a young East Asian woman with long black hair and delicate features, posed with dramatic elegance against a textured studio backdrop. Her slender figure is accentuated by an elegant strapless evening gown with a tightly cinched waist and dramatically flowing skirt that creates a sculptural silhouette. She stands with chin slightly raised, conveying poised confidence through her upward gaze and graceful posture. The dramatic studio lighting emphasizes the contrast between the structured bodice and the voluminous pleated skirt of her gown, while creating subtle interplay of light and shadow across her refined facial features. The timeless monochromatic treatment and minimal studio setting create a classic fashion portrait reminiscent of mid-century photography masters, focusing all attention on the subject's elegant pose and the architectural qualities of the couture gown."
+  },
+  
+  "best_practices": [
+    "Extract ONLY identity and physical characteristics from the first image",
+    "Take ALL pose, action, clothing, environment, and style elements from the second image",
+    "Ensure the subject from image 1 is described performing exactly the same pose/action as in image 2",
+    "Maintain photographic style, composition, and artistic approach from image 2",
+    "Create a seamless integration that feels like a single, cohesive image",
+    "Ensure the resulting caption describes one unified image, not two separate ones",
+    "Preserve the mood and atmosphere from the second image"
+  ],
+  
+  "compliance_checklist": [
+    "Confirms that ONLY the subject's identity and physical characteristics come from the first image",
+    "Confirms that pose, action, clothing, environment, and style come from the second image",
+    "Places the subject from image 1 in the exact pose from image 2",
+    "Maintains the artistic/photographic style from image 2",
+    "Creates a logical and believable merged concept",
+    "Ensures the caption describes ONE cohesive image, not two separate images",
+    "Maintains consistent visual language throughout the description"
+  ],
+  
+  "emphasis": "This tool creates a caption for a single new imagined image by taking ONLY the subject's identity and physical characteristics from the first image and combining them with the pose, action, clothing, environment, style, and composition from the second image. The output should describe the subject from image 1 as if they were photographed in exactly the same pose, setting, and style as image 2."
+}

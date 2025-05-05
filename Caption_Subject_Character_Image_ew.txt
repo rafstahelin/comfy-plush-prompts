@@ -1,0 +1,92 @@
+{
+  "task": "Caption_Subject_Character_Image",
+  "version": "1.1",
+  "creation_date": "2025-04-10",
+  "last_updated": "2025-04-10",
+  "description": "Generate a two-part caption for a subject/character image. The first part isolates the subject's defining facial features and hairstyle in no more than three phrases, focusing on their essence and identity. The second part describes circumstantial aspects of the photographic image that are variable, such as lighting, clothing, setting, and expression. The caption must begin with 'Image of woman/man...' to establish the subject's gender and presence.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 200 tokens",
+  "structure": {
+    "part_1_subject_identity": {
+      "focus": "Isolate the subject's defining facial features and hairstyle in no more than three concise phrases.",
+      "elements": [
+        "Demographic identifier (e.g., 'Image of a middle-aged man with...')",
+        "Key facial features (e.g., 'prominent cheekbones and a square jawline')",
+        "Hair description (e.g., 'short wavy brown hair styled neatly')"
+      ]
+    },
+    "part_2_image_circumstance": {
+      "focus": "Describe the circumstantial aspects of the photographic image that vary across images.",
+      "elements": [
+        "Lighting conditions (e.g., 'soft diffused light casting gentle shadows')",
+        "Clothing or attire (e.g., 'wearing a dark blazer with subtle patterns')",
+        "Setting or background (e.g., 'against a blurred urban skyline')",
+        "Expression or emotional tone (e.g., 'with a warm smile and relaxed gaze')"
+      ]
+    }
+  },
+  "subject_focus": {
+    "approach": [
+      {
+        "part_1_subject_identity": {
+          "exclusive_focus": "Describe only the subject's facial features and hairstyle in this section."
+        }
+      },
+      {
+        "part_2_image_circumstance": {
+          "contextual_elements_allowed": [
+            "lighting", 
+            "clothing", 
+            "setting", 
+            "expression"
+          ],
+          "prohibited_elements": [
+            "personality assumptions", 
+            "emotional interpretations beyond expression", 
+            "subjective aesthetic judgments"
+          ]
+        }
+      }
+    ]
+  },
+  "tone": {
+    "voice": {
+      "part_1_subject_identity": {
+        "style": "Objective, concise, identity-focused"
+      },
+      "part_2_image_circumstance": {
+        "style": "Descriptive, contextual, image-specific"
+      }
+    },
+    "terminology": {
+      "precision_required_for_part_1_subject_identity": [
+        {"facial_features_descriptors": ["angular", "soft", "symmetrical", etc.]},
+        {"hair_descriptors": ["straight", "curly", etc.]}
+      ],
+      "flexibility_allowed_for_part_2_image_circumstance": [
+        {"lighting_terms": ["diffused", etc.]},
+        {"clothing_descriptors": ["formal", etc.]},
+        {"background_descriptors": ["urban skyline", etc.]},
+        {"expression_descriptors": ["relaxed gaze", etc.]}
+      ]
+    }
+  },
+  "example_caption": {
+    "caption_text": "'Image of a young woman with soft features, high cheekbones, and long wavy black hair cascading over her shoulders. Illuminated by warm natural light creating soft highlights on her skin, she is dressed in a casual white blouse and seated against a neutral indoor background with a relaxed smile and direct gaze.'"
+  },
+  "best_practices": [
+    {
+      "part_1_subject_identity_best_practices": [
+        {"focus_on_key_features_only": true},
+        {"limit_to_three_phrases_or_less_for_identity_description": true}
+      ]
+    },
+    {
+      "part_2_image_circumstance_best_practices": [
+        {"describe_only_variable_aspects_of_the_image_contextually_and_concisely": true},
+        {"avoid_subjective_or_emotional_interpretations_beyond_expression_description": true}
+      ]
+    }
+  ],
+  "compliance_checklist": [
+    {"verify_caption_starts_with_'Image_of_woman/man...'_to_establish_subject_presence_and_gender_as_required_by_formatting_rules. ": true},
+    {"ensure_part_1_and_part_2_are_distinct_yet_seamlessly_integrated_into_a_single_paragraph_caption,_with_no_more_than _200-total-token-limit."

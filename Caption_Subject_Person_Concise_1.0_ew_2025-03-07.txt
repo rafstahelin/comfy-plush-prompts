@@ -1,0 +1,43 @@
+{
+  "task": "Caption_Subject_Person_Concise",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Generate a concise, focused description of ONLY the SUBJECT PERSON. Exclude all environment, clothing, photographic elements, and subjective impressions. Provide a lean, efficient description of the person's key physical characteristics.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 150 tokens",
+  "structure": {
+    "demographic_identifier": "Begin with basic age/gender/ethnicity if apparent (e.g., 'Young adult woman with...')",
+    "key_features": "Describe 2-3 defining facial characteristics",
+    "hair": "Brief description of hair style, color, and cut",
+    "makeup": "Concise note on makeup if present, focusing on dominant elements only",
+    "expression": "Brief mention of primary expression or gaze"
+  },
+  "subject_focus": {
+    "approach": "Describe only the person, nothing else",
+    "prohibited_elements": [
+      "clothing/outfit", "environment/background", "photographic style/lighting",
+      "subjective impressions", "personality assumptions", "emotional interpretations",
+      "contextual elements", "objects/props", "overall aesthetic judgments"
+    ]
+  },
+  "tone": {
+    "voice": "Objective, factual, concise",
+    "terminology": "Clear, direct language with minimal adjectives"
+  },
+  "example": "Young adult woman with East Asian features, defined cheekbones, and refined facial structure. Straight black hair in a precise chin-length bob with center part and blunt ends. Makeup features bold red pigment applied across upper face in a diffused, gradient effect creating a mask-like appearance. Expression neutral with direct gaze and slightly parted lips.",
+  "best_practices": [
+    "Prioritize essential identifying features only",
+    "Eliminate all subjective judgments and impressions",
+    "Focus on 2-3 most distinctive aspects of appearance",
+    "Use precise but minimal descriptors",
+    "Avoid redundant or flowery language",
+    "Exclude all non-person elements"
+  ],
+  "compliance_checklist": [
+    "Verify no references to non-person elements",
+    "Confirm length is under 150 tokens",
+    "Check that only key identifying features are included",
+    "Ensure factual, objective language throughout"
+  ],
+  "emphasis": "Create the shortest effective description that would allow someone to identify this specific person. Focus only on their physical appearance, excluding all contextual elements and subjective impressions."
+}

@@ -1,0 +1,101 @@
+{
+  "task": "Caption_Jewelry_Technical_Analysis",
+  "version": "1.0",
+  "creation_date": "2023-06-10",
+  "last_updated": "2023-06-10",
+  "description": "A comprehensive framework for analyzing jewelry pieces with emphasis on craftsmanship, materials, and design elements while completely avoiding references to any wearer or human subject. This template enables detailed technical descriptions of jewelry as independent objects of art and craftsmanship.",
+  "output_format": "Structured technical analysis of 75-150 words focusing exclusively on the jewelry item's physical properties, construction techniques, and design elements without any reference to a person wearing or modeling the piece.",
+  "emphasis": "Maintain absolute focus on the jewelry as an independent object. Never reference a wearer, model, person, or body part. Describe the jewelry purely in terms of its own properties and characteristics.",
+  "subject_isolation": {
+    "approach": "Treat the jewelry as a standalone art object or technical specimen with inherent properties independent of any wearer",
+    "opening_format": "Begin by identifying the specific type of jewelry (e.g., 'A platinum engagement ring', 'An ornate gold necklace', 'A pair of diamond earrings')",
+    "prohibited_references": [
+      "wearer", "model", "person", "woman", "man", "individual", "subject", 
+      "neck", "finger", "wrist", "ear", "body", "hand", "arm",
+      "wearing", "adorned", "complementing", "enhancing", "flattering",
+      "any pronouns (she, he, they) referring to a wearer",
+      "any possessive terms (her, his, their) referring to a wearer"
+    ],
+    "alternative_phrasing": {
+      "instead_of": ["worn on the neck", "adorns her finger", "hanging from his ears"],
+      "use": ["designed as a necklace", "crafted as a ring", "structured as earrings"]
+    }
+  },
+  "structure": {
+    "identification": "Precise classification of the jewelry type and primary materials",
+    "materials_analysis": "Detailed identification of metals, gemstones, and other materials used",
+    "craftsmanship_elements": "Technical description of construction methods, setting techniques, and finishing details",
+    "design_analysis": "Examination of aesthetic elements, motifs, patterns, and stylistic influences",
+    "technical_details": "Specific observations about dimensions, weight, mechanisms, closures, or other functional elements",
+    "historical_or_stylistic_context": "Optional reference to period, movement, or design tradition if clearly identifiable"
+  },
+  "technical_terminology": {
+    "jewelry_types": [
+      "ring", "necklace", "pendant", "brooch", "bracelet", "bangle", "cuff", 
+      "earrings", "tiara", "anklet", "collar", "choker", "lariat", "chain", 
+      "charm", "amulet", "talisman", "pin", "clasp", "medallion"
+    ],
+    "metals": [
+      "gold", "white gold", "rose gold", "platinum", "silver", "sterling silver", 
+      "titanium", "palladium", "brass", "bronze", "copper", "rhodium", "vermeil"
+    ],
+    "metal_treatments": [
+      "polished", "brushed", "hammered", "textured", "engraved", "etched", 
+      "oxidized", "patinated", "plated", "electroplated", "anodized"
+    ],
+    "gemstones": {
+      "precious": ["diamond", "ruby", "sapphire", "emerald"],
+      "semi_precious": [
+        "amethyst", "aquamarine", "citrine", "garnet", "jade", "lapis lazuli", 
+        "moonstone", "opal", "peridot", "tanzanite", "topaz", "tourmaline", "turquoise"
+      ],
+      "organic": ["pearl", "coral", "amber", "jet", "mother-of-pearl", "shell"]
+    },
+    "gem_characteristics": [
+      "carat", "clarity", "color", "cut", "brilliance", "fire", "luster", 
+      "transparency", "translucency", "opacity", "inclusion", "faceted", "cabochon"
+    ],
+    "setting_techniques": [
+      "prong", "bezel", "channel", "pavé", "flush", "tension", "invisible", 
+      "cluster", "gypsy", "illusion", "halo", "cathedral", "tiffany", "bar", "bead"
+    ],
+    "construction_methods": [
+      "cast", "fabricated", "forged", "soldered", "fused", "wire-wrapped", 
+      "filigree", "granulation", "repoussé", "chasing", "mokume-gane", "inlay", "overlay"
+    ],
+    "design_elements": [
+      "symmetrical", "asymmetrical", "geometric", "organic", "abstract", "naturalistic", 
+      "floral", "foliate", "zoomorphic", "anthropomorphic", "architectural", "sculptural"
+    ],
+    "periods_and_styles": [
+      "Art Deco", "Art Nouveau", "Victorian", "Edwardian", "Georgian", "Retro", 
+      "Mid-Century", "Contemporary", "Minimalist", "Baroque", "Renaissance", 
+      "Gothic", "Celtic", "Byzantine", "Etruscan", "Modernist"
+    ]
+  },
+  "best_practices": [
+    "Start with a clear identification of the jewelry type (ring, necklace, etc.) and its primary materials",
+    "Use precise technical terminology for materials, techniques, and design elements",
+    "Describe visual properties objectively (color, texture, finish, reflectivity)",
+    "Analyze construction methods and setting techniques with technical accuracy",
+    "Note distinctive design features that characterize the piece",
+    "Reference historical or stylistic influences only when clearly evident",
+    "Maintain a clinical, museum-catalog approach to description",
+    "Use measurements or proportional descriptions rather than body-referential terms",
+    "Describe how elements relate to each other rather than to a wearer",
+    "Focus on craftsmanship indicators such as precision, symmetry, and finishing details"
+  ],
+  "compliance_checklist": [
+    "Contains no references to any person or wearer",
+    "Avoids all body part terminology",
+    "Uses no possessive pronouns relating to a wearer",
+    "Describes the jewelry as a standalone object",
+    "Employs proper technical terminology for materials and techniques",
+    "Analyzes design elements and craftsmanship objectively",
+    "Maintains focus on physical properties and visual characteristics",
+    "Provides specific, detailed observations rather than generic descriptions",
+    "Uses precise language without flowery or emotional embellishment",
+    "Presents information in a logical, structured sequence"
+  ],
+  "example_caption": "A platinum engagement ring featuring a 2-carat round brilliant-cut diamond in a six-prong cathedral setting. The center stone displays exceptional clarity with VS1 grade and F-color rating. The band incorporates channel-set baguette diamonds along the shoulders, totaling approximately 0.5 carats. The platinum has been polished to a high mirror finish, while the underside of the setting showcases delicate milgrain detailing. The ring exemplifies classic Art Deco design influences through its geometric proportions and stepped architectural elements. The prongs are precisely formed with button tips, securing the center diamond while maximizing light exposure. Fine engraving work appears on the gallery with scroll motifs characteristic of 1920s craftsmanship."
+}

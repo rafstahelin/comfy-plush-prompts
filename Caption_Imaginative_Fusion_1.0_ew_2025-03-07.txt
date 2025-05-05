@@ -1,0 +1,121 @@
+{
+  "task": "Caption_Imaginative_Fusion",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Generate a caption for a SINGLE NEW IMAGINED IMAGE that artfully fuses key aesthetic elements from two reference images. The output is NOT a description of either original image, but rather a detailed vision of a hypothetical new image that could be created by harmoniously blending selected visual qualities from both sources.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 300 tokens",
+  "structure": {
+    "opening_declaration": "Begin by clearly stating this is a new imagined image concept (e.g., 'An imagined photograph that fuses...')",
+    "core_concept": "Articulate the central visual concept or theme of this new hybrid image",
+    "visual_elements": "Describe the specific aesthetic elements selected from each source image and how they integrate",
+    "unified_composition": "Detail how these elements arrange into a single cohesive composition",
+    "technical_treatment": "Explain the photographic/artistic approach that would unify these elements",
+    "atmospheric_quality": "Describe the mood, lighting, and emotional tone of this new imagined image"
+  },
+  "analytical_process": {
+    "phase_1_extraction": {
+      "description": "Identify key visual elements from each source image",
+      "process": [
+        "List dominant visual elements from source image 1 (color palette, composition, subject pose, etc.)",
+        "List dominant visual elements from source image 2",
+        "Identify complementary elements that could naturally blend",
+        "Identify contrasting elements that create interesting tension"
+      ]
+    },
+    "phase_2_selection": {
+      "description": "Select which elements to incorporate in the new image",
+      "process": [
+        "Choose elements that create visual harmony when combined",
+        "Prioritize elements with strongest aesthetic impact",
+        "Ensure balanced representation from both source images",
+        "Eliminate elements that would conflict irreconcilably"
+      ]
+    },
+    "phase_3_transformation": {
+      "description": "Transform selected elements into a cohesive new concept",
+      "process": [
+        "Adapt elements to work together in a unified context",
+        "Create logical transitions between disparate elements",
+        "Establish a dominant visual language that incorporates both sources",
+        "Ensure the result feels like a single intentional image, not a collage"
+      ]
+    },
+    "phase_4_refinement": {
+      "description": "Refine the concept into a detailed, coherent caption",
+      "process": [
+        "Describe the new image with precise, consistent terminology",
+        "Maintain technical accuracy in photographic/artistic details",
+        "Create a logical visual narrative that flows naturally",
+        "Verify the description reads as a single cohesive image"
+      ]
+    }
+  },
+  "visual_categories": {
+    "subject_elements": {
+      "posing": "Body position, gesture, movement, expression",
+      "styling": "How the subject is presented visually",
+      "relationship_to_space": "How the subject interacts with their environment" 
+    },
+    "compositional_elements": {
+      "framing": "How the image is visually organized and contained",
+      "perspective": "Viewpoint, angle, spatial relationships",
+      "balance": "Visual weight distribution, symmetry/asymmetry",
+      "focus": "Where attention is directed within the frame"
+    },
+    "technical_elements": {
+      "color_palette": "Dominant and accent colors, temperature, saturation",
+      "lighting": "Light quality, direction, intensity, contrast",
+      "texture": "Surface qualities, material properties",
+      "photographic_style": "Processing, filmic qualities, technical approach"
+    },
+    "conceptual_elements": {
+      "mood": "Emotional quality conveyed through visual means",
+      "narrative": "Storytelling aspects and implied context",
+      "symbolism": "Visual metaphors and deeper meanings",
+      "aesthetic": "Overall stylistic approach and artistic lineage"
+    }
+  },
+  "fusion_guidelines": {
+    "primacy_principle": "Establish which source image provides the dominant framework",
+    "complementary_integration": "Identify elements from second image that enhance the first",
+    "contrast_harmony": "Use contrasting elements to create dynamic tension within harmony",
+    "unifying_techniques": [
+      "Consistent lighting approach across all elements",
+      "Cohesive color grading that bridges different palettes",
+      "Unified spatial logic and perspective",
+      "Consistent technical treatment (processing, style)"
+    ],
+    "transformation_methods": [
+      "Direct incorporation: Elements used as-is from source",
+      "Adaptation: Elements modified to fit new context",
+      "Inspiration: Elements that inform but are substantially reimagined",
+      "Synthesis: Entirely new elements that emerge from the combination"
+    ]
+  },
+  "example": "An imagined fashion photograph capturing a dynamic figure in mid-leap against a gradient twilight sky, fusing high-contrast monochromatic drama with sunset-bathed golden luminosity. The composition centers on a statuesque silhouette wearing a revolutionary garment that transitions from structured geometric forms to flowing fabric – the upper portion features architectural black-and-white panels with precise angular cuts creating bold negative space, while below it transforms into billowing golden silk that catches air like liquid metal, creating a magnificent corona of fabric. Pink floral accents appear selectively throughout the design, punctuating the dramatic palette with deliberate feminine counterpoints. The figure's hair is styled in long braids that stream behind in the implied wind, their dark silhouettes creating graphic lines against the background's ombré progression from deep midnight blue to fiery orange-gold at the horizon. The lighting masterfully bridges two worlds – theatrical spotlighting defines the sculptural upper elements with crisp shadows and highlights, while diffuse golden hour warmth suffuses the flowing lower portions, creating a harmonious duality within a single frame. The overall effect suggests transformation itself – structure dissolving into fluidity, night merging with day, restraint giving way to freedom – all captured in a singular moment of suspended animation that feels both powerfully physical and ethereally weightless.",
+  "best_practices": [
+    "Always begin by establishing this is a NEW imagined image, not either source image",
+    "Create a single coherent visual concept that draws from both sources",
+    "Ensure the caption describes ONE unified image throughout",
+    "Balance elements from both sources for harmonious integration",
+    "Use consistent lighting, perspective, and stylistic approach throughout",
+    "Develop transitions that make disparate elements feel naturally connected",
+    "Consider how technical aspects (photography, editing) would unify the elements",
+    "Create a logical visual narrative that a viewer could follow",
+    "Use precise terminology while maintaining narrative flow",
+    "Focus on how the fusion creates something new rather than just combining existing elements"
+  ],
+  "compliance_checklist": [
+    "Does the caption clearly indicate this is a NEW imagined image?",
+    "Does the description maintain a single, unified visual concept throughout?",
+    "Are elements from both source images meaningfully integrated?",
+    "Is there consistent lighting, perspective, and stylistic treatment?",
+    "Does the result read as ONE cohesive image rather than two separate images?",
+    "Is there balanced representation from both source images?",
+    "Does the caption avoid phrases like 'in the first image' or 'the second image shows'?",
+    "Does the fusion create something new rather than just describing the originals?",
+    "Is the technical approach consistent and believable throughout?"
+  ],
+  "emphasis": "This caption must describe a SINGLE NEW IMAGE that does not yet exist. It should not describe or compare the original reference images, but rather create a detailed vision of what a new image would look like if it harmoniously fused selected elements from both sources. The result should feel like a cohesive, intentional artistic creation rather than a mechanical combination of parts."
+}

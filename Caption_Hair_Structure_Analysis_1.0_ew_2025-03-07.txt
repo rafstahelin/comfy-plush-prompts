@@ -1,0 +1,89 @@
+{
+  "task": "Caption_Hair_Structure_Analysis",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Generate a technically precise analysis focusing 100% EXCLUSIVELY on the HAIR STRUCTURE ONLY. Do NOT describe any person, face, gender, ethnicity, age, or any human characteristics whatsoever. The caption must be SOLELY about the hair as if it exists as an independent sculptural object.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 200 tokens",
+  "structure": {
+    "opening_identification": "Begin with 'Photograph of [hair description]' with NO mention of any person (e.g., 'Photograph of sculptural avant-garde hair featuring...')",
+    "hair_structure": "Describe the shape, form, and architectural elements of the hair structure",
+    "styling_technique": "Detail the technical styling methods evident in creating the hair structure",
+    "texture_analysis": "Analyze the texture, shine, and surface qualities of the hair",
+    "directional_elements": "Describe the directional flow, projections, and three-dimensional aspects",
+    "photographic_presentation": "Mention ONLY how the photographic treatment (lighting, contrast, etc.) highlights the HAIR structure",
+    "artistic_context": "Conclude with styling influences and artistic references related ONLY to the hair"
+  },
+  "subject_isolation": {
+    "approach": "Treat hair as an independent sculptural creation with no connection to a person",
+    "format": "Begin with direct subject identification (e.g., 'Photograph of sculptural avant-garde hair featuring...')",
+    "prohibited_references": [
+      "model", "person", "subject", "individual", "wearer", "client",
+      "woman", "man", "female", "male", "boy", "girl", 
+      "Asian", "African", "European", "Caucasian", "Latino", "Hispanic", "ethnic",
+      "young", "old", "teenage", "elderly", "middle-aged", "mature",
+      "face", "facial", "features", "expression", "gaze", "look", 
+      "eyes", "eyebrows", "nose", "lips", "mouth", "chin", "cheeks", "forehead",
+      "skin", "complexion", "makeup", "cosmetics", "beauty",
+      "wearing", "adorned", "showcasing", "displaying", "modeling",
+      "framing", "complementing", "enhancing", "flattering"
+    ]
+  },
+  "tone": {
+    "voice": "Technical hair artist focused solely on hair as an artistic medium",
+    "approach": "Clinically analytical about hair structure, ignoring any human elements",
+    "terminology": "Use specific technical hair styling and structural terminology",
+    "perspective": "Present as objective documentation for hair design archives or professional reference"
+  },
+  "technical_terminology": {
+    "hair_structures": [
+      "undercut", "disconnection", "graduation", "layering", "texturizing",
+      "precision cut", "blunt cut", "feathering", "point cutting", "razor cutting",
+      "sectioning", "vidal sassoon", "geometric", "asymmetric", "symmetric"
+    ],
+    "styling_techniques": [
+      "backcombing", "teasing", "crimping", "thermal styling", "wet styling",
+      "finger waves", "pin curls", "hot rollers", "straightening", "curling",
+      "blow-out", "diffusing", "smoothing", "texturizing", "volumizing"
+    ],
+    "hair_textures": [
+      "coarse", "fine", "medium", "straight", "wavy", "curly", "coily",
+      "matte", "high-shine", "satin finish", "textured", "smooth", "sleek",
+      "dry", "wet-look", "glossy", "ultra-smooth", "deliberate frizz"
+    ],
+    "structural_elements": [
+      "volume", "height", "projection", "extension", "uplift",
+      "vertical direction", "horizontal sweep", "diagonal thrust", "sculpted",
+      "architectural", "dimensional", "silhouette", "contour", "outline"
+    ]
+  },
+  "design_references": {
+    "historical_influences": [
+      "1920s Finger Waves", "1960s Beehive", "1970s Afro", "1980s New Wave",
+      "1990s Grunge Texture", "Y2K Sleek", "Avant-Garde Editorial", "Futuristic"
+    ],
+    "styling_schools": [
+      "Vidal Sassoon Precision", "Toni & Guy Architectural", "Trevor Sorbie Creative",
+      "Japanese Avant-Garde", "Sam McKnight Session", "Eugene Souleiman Conceptual"
+    ]
+  },
+  "example": "Photograph of sculptural avant-garde hair featuring dramatic vertical projections and lateral extensions creating a bold architectural silhouette. The structure employs precise sectioning technique with a central spire rising sharply from the crown area, complemented by symmetrical wing-like projections extending horizontally. Each directional element exhibits meticulous tension control with sleek, high-shine base contrasting against deliberately jagged, explosive textured ends. The monochromatic presentation enhances the structural definition and textural contrasts throughout. The execution suggests application of extreme-hold styling products, thermal setting techniques, and possible underlying supports to maintain the gravity-defying elements. This conceptual approach references Japanese avant-garde hair artistry merged with 1980s London session styling aesthetics, particularly evident in editorial fashion imagery of that era. The high-contrast black and white photographic treatment emphasizes the architectural quality of the hair structure and the precise definition of each textural element.",
+  "best_practices": [
+    "Maintain exclusive focus on hair without describing any person",
+    "Begin with clear identification of the hair structure as a standalone object",
+    "Use precise industry terminology for hair structure and styling techniques",
+    "Analyze the three-dimensional form and architectural qualities of the hair",
+    "Note technical styling methods evident in the execution",
+    "Reference specific hair design traditions when clearly evident",
+    "Discuss textural qualities and surface treatments",
+    "Consider directional elements and spatial distribution of volume"
+  ],
+  "compliance_checklist": [
+    "Verify ZERO references to any person or human characteristic remain",
+    "Confirm opening identification follows required structure",
+    "Check technical accuracy of hair styling and structural terminology",
+    "Assess appropriateness of texture and directional descriptions",
+    "Validate structural coherence and exclusive focus on hair as object"
+  ],
+  "emphasis": "The ONLY subject of this caption is the HAIR. The caption must function as professional hair design documentation focused solely on the hair as an independent artistic creation, completely isolated from any person. The content will be used specifically for training diffusion image generation models to understand the relationship between detailed text descriptions and visual outputs."
+}

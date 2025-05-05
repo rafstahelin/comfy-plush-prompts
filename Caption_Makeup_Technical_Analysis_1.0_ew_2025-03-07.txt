@@ -1,0 +1,102 @@
+{
+  "task": "Caption_Makeup_Technical_Analysis",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Generate a technically precise analysis focusing 100% EXCLUSIVELY on MAKEUP ARTISTRY and APPLICATION TECHNIQUES. Do NOT describe any person, facial features, gender, ethnicity, age, or any human characteristics whatsoever. The caption must be SOLELY about the makeup as if it exists as an independent artistic creation.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 250 tokens",
+  "structure": {
+    "opening_identification": "Begin with 'Photograph of [makeup description]' with NO mention of any person (e.g., 'Photograph of avant-garde makeup featuring...')",
+    "color_analysis": "Describe the color palette, pigmentation intensity, and chromatic relationships",
+    "application_technique": "Detail the technical methods evident in creating the makeup look",
+    "texture_examination": "Analyze the finish, texture, and surface qualities of the makeup",
+    "compositional_elements": "Describe the layout, balance, proportions, and artistic arrangement",
+    "photographic_presentation": "Mention ONLY how the photographic treatment (lighting, contrast, etc.) highlights the MAKEUP artistry",
+    "artistic_context": "Conclude with cosmetic influences and artistic references related ONLY to the makeup"
+  },
+  "subject_isolation": {
+    "approach": "Treat makeup as an independent artistic creation with no connection to a person",
+    "format": "Begin with direct subject identification (e.g., 'Photograph of avant-garde makeup featuring...')",
+    "prohibited_references": [
+      "model", "person", "subject", "individual", "wearer", "client",
+      "woman", "man", "female", "male", "boy", "girl", 
+      "Asian", "African", "European", "Caucasian", "Latino", "Hispanic", "ethnic",
+      "young", "old", "teenage", "elderly", "middle-aged", "mature",
+      "face", "facial", "features", "expression", "gaze", "look", 
+      "eyes", "eyebrows", "nose", "lips", "mouth", "chin", "cheeks", "forehead",
+      "skin", "complexion", "beauty", "pretty", "handsome", "attractive",
+      "wearing", "adorned", "showcasing", "displaying", "modeling",
+      "framing", "complementing", "enhancing", "flattering"
+    ]
+  },
+  "tone": {
+    "voice": "Technical makeup artist focused solely on makeup as an artistic medium",
+    "approach": "Clinically analytical about makeup techniques, ignoring any human elements",
+    "terminology": "Use specific technical makeup artistry and cosmetic science terminology",
+    "perspective": "Present as objective documentation for makeup design archives or professional reference"
+  },
+  "technical_terminology": {
+    "application_techniques": [
+      "stippling", "blending", "buffing", "patting", "pressing", "airbrushing",
+      "layering", "feathering", "gradient", "ombré", "cut crease", "halo", 
+      "color wash", "watercolor technique", "draping", "baking", "strobing",
+      "contouring", "blocking", "stenciling", "foiling", "stamping"
+    ],
+    "makeup_textures": [
+      "matte", "satin", "gloss", "metallic", "shimmer", "glitter", "foiled",
+      "dewy", "luminous", "radiant", "velvet", "suede", "cream", "gel",
+      "powder", "liquid", "mousse", "balm", "oil-based", "water-based",
+      "multi-dimensional", "holographic", "duochrome", "iridescent"
+    ],
+    "pigment_properties": [
+      "opaque", "sheer", "translucent", "buildable", "saturated", "desaturated",
+      "high-impact", "subtle", "concentrated", "diffused", "pure", "mixed",
+      "monochromatic", "polychromatic", "primary", "secondary", "tertiary",
+      "cool-toned", "warm-toned", "neutral", "vibrant", "muted", "pastel"
+    ],
+    "compositional_elements": [
+      "symmetrical", "asymmetrical", "balanced", "focal point", "negative space",
+      "contrast", "harmony", "cohesion", "juxtaposition", "proportion", "scale",
+      "graphic", "abstract", "geometric", "organic", "minimalist", "maximalist",
+      "editorial", "avant-garde", "conceptual", "theatrical", "sculptural"
+    ]
+  },
+  "design_references": {
+    "historical_influences": [
+      "1920s Silent Film", "1950s Hollywood Glamour", "1960s Mod", "1970s Disco",
+      "1980s New Wave", "1990s Grunge", "Y2K Frost", "2010s Instagram", "Futuristic",
+      "Kabuki", "Ancient Egyptian", "Elizabethan", "Art Deco", "Pop Art", "Bauhaus"
+    ],
+    "makeup_schools": [
+      "Pat McGrath Conceptual", "Kevyn Aucoin Sculptural", "Alex Box Avant-Garde",
+      "Val Garland Watercolor", "Isamaya Ffrench Experimental", "Lisa Eldridge Classic",
+      "Kabuki Theater", "Drag Performance", "Editorial Fashion", "Runway Conceptual",
+      "Special Effects", "Body Painting", "Prosthetic", "High Fashion", "Minimalist"
+    ],
+    "product_categories": [
+      "foundation", "concealer", "powder", "blush", "bronzer", "highlighter",
+      "eyeshadow", "eyeliner", "mascara", "brow products", "lipstick", "lip liner",
+      "lip gloss", "setting spray", "primer", "color corrector", "pigment",
+      "glitter", "face paint", "body makeup", "theatrical makeup", "prosthetics"
+    ]
+  },
+  "example": "Photograph of avant-garde makeup featuring a bold explosion of saturated crimson pigment applied with a deliberate powder-splatter technique across the upper regions of the composition. The artistic approach employs a striking color story centered exclusively on varying intensities of vibrant red, from sheer translucent stains to opaque matte applications, creating dimensional depth through textural contrast rather than color variation. The technical execution demonstrates masterful dry-powder stippling and precision airbrushing, allowing individual pigment particles to create a scattered, near-pointillist effect that intensifies toward the central focal areas. This gradient dispersion technique creates a visual heat map effect, with concentrated saturation radiating outward into a diffused, atmospheric boundary. The finish artfully juxtaposes textures - incorporating matte pressed powder, micro-fine shimmer particles, and what appears to be a sealed setting spray to create selective glossy highlights that catch the studio lighting. The artistic approach references Japanese avant-garde makeup techniques with its bold asymmetry and chromatic minimalism, while the meticulous pigment dispersion evokes the controlled chaos of abstract expressionist painting. High-contrast photography with neutral ambient lighting emphasizes the dimensional quality of the application, highlighting the technical complexity of the powder particle distribution and the deliberate imperfection that gives the composition its raw, emotional impact.",
+  "best_practices": [
+    "Maintain exclusive focus on makeup without describing any facial features",
+    "Begin with clear identification of the makeup as a standalone artistic creation",
+    "Use precise industry terminology for makeup application techniques and product types",
+    "Analyze the color theory aspects including palette harmony and chromatic relationships",
+    "Note technical application methods evident in the execution",
+    "Reference specific makeup artistry traditions when clearly evident",
+    "Discuss textural qualities and finish variations",
+    "Consider compositional elements and artistic arrangement"
+  ],
+  "compliance_checklist": [
+    "Verify ZERO references to any person, facial features, or human characteristics remain",
+    "Confirm opening identification follows required structure",
+    "Check technical accuracy of makeup artistry and cosmetic science terminology",
+    "Assess appropriateness of color and texture descriptions",
+    "Validate structural coherence and exclusive focus on makeup as artistic medium"
+  ],
+  "emphasis": "The ONLY subject of this caption is the MAKEUP. The caption must function as professional makeup artistry documentation focused solely on the makeup as an independent artistic creation, completely isolated from any person wearing it. The content will be used specifically for training diffusion image generation models to understand the relationship between detailed text descriptions and visual makeup outputs."
+}

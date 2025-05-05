@@ -1,0 +1,35 @@
+{
+  "task": "Caption_IMG_Fashion",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Create a comprehensive caption that accurately describes all visual elements in the image to help train text-to-image diffusion models like T5XXL CLIP",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 300 tokens",
+  "structure": {
+    "image_type": "Identify the fundamental type of image (photograph, fashion photo, portrait, color/black and white, digital art, etc.)",
+    "subject": "Always explicitly describe the main subject as either 'woman' or 'man' (never use gender-neutral terms like 'person', 'model', 'individual', etc.). Include approximate age, ethnicity if clear, and their pose/position/expression",
+    "outfit": "Detail the garments, including specific pieces, notable features, colors, materials, style, designer influences, and historical/cultural references if applicable",
+    "environment": "Describe the setting/background where the image takes place (studio, outdoor location, etc.)",
+    "style": "Characterize the overall aesthetic, mood, lighting, composition, and artistic/photographic approach"
+  },
+  "tone": "Technical, precise, and descriptive. Focus on visual elements that would be valuable for training text-to-image diffusion models like T5XXL CLIP. Prioritize objective details over subjective interpretations.",
+  "examples": [
+    "Professional color fashion photograph of a woman with shoulder-length brown hair posed standing with direct gaze. She wears an oversized grey wool blazer featuring an asymmetric cutout at the waist, paired with matching wide-leg trousers and a wide grey leather belt with silver buckle. Brown leather sandals complete the look. The subject is photographed against a plain white studio background with soft, even lighting creating minimal shadows. The image employs a minimalist contemporary fashion editorial style with clean composition, focusing on the architectural silhouette of the deconstructed suiting and emphasizing the contrast between traditional tailoring and modern design elements.",
+    
+    "Vintage black and white street photography of a man with weathered features and white beard sitting on a wooden bench. He wears a well-worn tweed flat cap, heavy wool overcoat with visible darning at the sleeves, simple cotton shirt, and dark woolen trousers with suspenders visible at the shoulders. The environment shows a cobblestone urban street with historic architecture partially visible in the background suggesting a European city center, likely mid-20th century. The image employs high contrast with strong shadows, grainy film texture, and documentary-style candid composition typical of humanist street photography, capturing a moment of contemplation with the subject gazing slightly off-camera."
+  ],
+  "best_practices": [
+    "Begin with the image type and medium to establish context",
+    "REQUIRED: Always describe the subject explicitly as either 'woman' or 'man' - never use gender-neutral terms like 'person' or 'individual'",
+    "Be specific about colors, patterns, and materials rather than using generic descriptors",
+    "Include technical details about composition, lighting, and photographic style",
+    "Balance description of foreground subjects with relevant background elements",
+    "Use precise fashion and photography terminology where appropriate",
+    "Maintain consistent detail level throughout the caption",
+    "Avoid subjective quality judgments ('beautiful', 'amazing', etc.)",
+    "Include information about pose, expression, and interaction between elements",
+    "Note distinctive stylistic elements that differentiate the image",
+    "Describe textures and material qualities when visible and significant"
+  ],
+  "emphasis": "This caption will be used specifically for training diffusion image generation models to understand the relationship between detailed text descriptions and visual outputs. The gender of the subject MUST be explicitly stated as either 'woman' or 'man' - never use gender-neutral terms."
+}

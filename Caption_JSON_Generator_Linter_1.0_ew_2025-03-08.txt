@@ -1,0 +1,199 @@
+{
+  "task": "Caption_JSON_Generator_Linter",
+  "version": "1.0",
+  "creation_date": "2025-03-08",
+  "last_updated": "2025-03-08",
+  "description": "Generate standardized JSON caption templates or lint existing JSON structures according to project standards. This tool creates consistent, technically precise caption frameworks optimized for text-to-image diffusion model training.",
+  "operation_modes": {
+    "generator": {
+      "description": "Creates a new JSON caption template based on captioning type description",
+      "input_format": "Natural language description of desired caption type (e.g., 'Create a template for analyzing jewelry details without mentioning the wearer')",
+      "output_format": "Complete, standards-compliant JSON caption template with all required fields"
+    },
+    "linter": {
+      "description": "Corrects and optimizes problematic JSON caption templates",
+      "input_format": "JSON code with potential syntax errors, structural issues, or non-compliant elements",
+      "output_format": "Corrected, optimized JSON that maintains original intent while conforming to all project standards"
+    }
+  },
+  "core_requirements": {
+    "syntax": {
+      "naming_conventions": {
+        "key_format": "underscore_notation (e.g., 'task_name', not 'taskName' or 'task name')",
+        "task_identifier": "Should be prefixed with 'Caption_' followed by specific focus area",
+        "clarity": "Keys should be self-explanatory and descriptive of their contents"
+      },
+      "structure": {
+        "nesting": "Logical grouping of related information into nested objects",
+        "array_usage": "Arrays for lists of related items (examples, best practices, terminology)",
+        "object_usage": "Objects for structured information with defined properties"
+      }
+    },
+    "metadata": {
+      "required_fields": [
+        {
+          "field": "task",
+          "format": "String with Caption_ prefix (e.g., 'Caption_Hair_Structure_Analysis')",
+          "purpose": "Identifies the specific purpose and focus of the template"
+        },
+        {
+          "field": "version",
+          "format": "String in semantic versioning format (e.g., '1.0')",
+          "purpose": "Tracks template versions for compatibility and updates"
+        },
+        {
+          "field": "creation_date",
+          "format": "String in YYYY-MM-DD format",
+          "purpose": "Records when the template was first created"
+        },
+        {
+          "field": "last_updated",
+          "format": "String in YYYY-MM-DD format",
+          "purpose": "Records when the template was most recently modified"
+        },
+        {
+          "field": "description",
+          "format": "Detailed string explaining template purpose and function",
+          "purpose": "Provides context and guidance for template usage"
+        }
+      ],
+      "recommended_fields": [
+        {
+          "field": "output_format",
+          "format": "String describing expected response format and constraints",
+          "purpose": "Sets clear expectations for caption structure and length"
+        },
+        {
+          "field": "emphasis",
+          "format": "String highlighting the most critical aspects of the template",
+          "purpose": "Focuses attention on key compliance requirements"
+        }
+      ]
+    },
+    "content_organization": {
+      "structure_object": {
+        "description": "Defines the sequential components of the caption",
+        "format": "Object with ordered key-value pairs describing each section",
+        "example": {
+          "opening_identification": "How to begin the caption",
+          "color_analysis": "Description of color elements",
+          "technical_elements": "Analysis of techniques used"
+        }
+      },
+      "subject_isolation": {
+        "description": "For element-specific templates, defines how to focus solely on the specified element",
+        "format": "Object containing approach, format, and prohibited references",
+        "required_for": "All element-specific caption templates (hair, makeup, outfit, etc.)"
+      },
+      "tone": {
+        "description": "Defines the voice, approach, and perspective of the caption",
+        "format": "Object or string describing the technical/professional tone required"
+      },
+      "technical_terminology": {
+        "description": "Domain-specific vocabulary organized by category",
+        "format": "Object with categorized arrays of technical terms",
+        "example": {
+          "application_techniques": ["stippling", "blending", "buffing"],
+          "makeup_textures": ["matte", "satin", "gloss"]
+        }
+      },
+      "best_practices": {
+        "description": "Guidelines for creating high-quality captions",
+        "format": "Array of instructional strings"
+      },
+      "compliance_checklist": {
+        "description": "Verification steps to ensure caption meets all requirements",
+        "format": "Array of checklist items to validate against"
+      }
+    }
+  },
+  "template_types": {
+    "element_specific": {
+      "description": "Templates focusing exclusively on a single element (hair, makeup, outfit)",
+      "key_requirements": {
+        "subject_isolation": "Must include explicit instructions to ignore human/wearer",
+        "prohibited_references": "Must include comprehensive list of terms to avoid",
+        "opening_format": "Must specify how to begin caption without referencing a person"
+      },
+      "examples": [
+        "Caption_Hair_Structure_Analysis",
+        "Caption_Makeup_Technical_Analysis",
+        "Caption_Fashion_Outfit_Analysis",
+        "Caption_Environment_Pure"
+      ]
+    },
+    "comprehensive": {
+      "description": "Templates covering multiple elements of an image in relation to each other",
+      "key_requirements": {
+        "element_balance": "Must provide guidance on weighting different aspects",
+        "relationship_guidance": "Must explain how to relate different elements",
+        "technical_context": "Must include photographic and compositional elements"
+      },
+      "examples": [
+        "Caption_IMG",
+        "Caption_Subject_Person_Analysis"
+      ]
+    },
+    "specialized": {
+      "description": "Templates for unique purposes (distillation, fusion, etc.)",
+      "key_requirements": {
+        "process_definition": "Must clearly explain the specialized process",
+        "input_output_relationship": "Must define how inputs relate to outputs",
+        "quality_criteria": "Must establish standards for successful execution"
+      },
+      "examples": [
+        "Caption_Imaginative_Fusion",
+        "Caption_Distillation_For_Diffusion"
+      ]
+    }
+  },
+  "linting_rules": {
+    "syntax_correction": {
+      "json_validity": "Ensure valid JSON with proper quote usage, commas, and brackets",
+      "formatting": "Apply consistent indentation and spacing",
+      "escape_sequences": "Properly handle special characters and escape sequences"
+    },
+    "structure_optimization": {
+      "redundancy_elimination": "Remove duplicate or redundant information",
+      "logical_grouping": "Ensure related information is properly nested",
+      "consistency": "Standardize similar structures throughout the document"
+    },
+    "content_compliance": {
+      "required_fields": "Verify all mandatory fields are present and properly formatted",
+      "terminology_consistency": "Ensure terminology aligns with project standards",
+      "isolation_integrity": "For element-specific templates, verify complete isolation"
+    }
+  },
+  "example_generator_request": "Create a template for analyzing landscape photography that focuses on compositional techniques, light quality, and environmental elements without any human presence",
+  "example_linter_request": "Fix and optimize this JSON template: {\"task\":\"Caption makeup analysis\", \"ver\":\"1\", \"created\":\"2025-03-01\", \"description\": \"Analyze makeup looks\", \"structure\": {\"part1\":\"describe colors\",\"part2\":\"describe techniques\"}}",
+  "process_flow": {
+    "generator_mode": [
+      "Analyze caption type description to determine template category",
+      "Select appropriate base structure (element-specific, comprehensive, specialized)",
+      "Generate all required metadata fields with current date",
+      "Create appropriate structure object based on subject matter",
+      "Include relevant technical terminology categorized by domain",
+      "Generate best practices specific to the caption type",
+      "Create compliance checklist for verification",
+      "For element-specific templates, generate comprehensive subject isolation guidelines",
+      "Include example caption demonstrating proper implementation",
+      "Format final JSON with consistent indentation and structure",
+      "Ensure output contains only the raw JSON with no markdown code fences or formatting tags"
+    ],
+    "linter_mode": [
+      "Parse input JSON, correcting any syntax errors",
+      "Identify missing required metadata fields and add with appropriate values",
+      "Standardize key naming to underscore notation",
+      "Reorganize structure for logical grouping and flow",
+      "Verify subject isolation if applicable to template type",
+      "Check and expand technical terminology for comprehensiveness",
+      "Ensure best practices and compliance checklist are present and appropriate",
+      "Format final JSON with consistent indentation and structure",
+      "Remove any markdown formatting tags (e.g., ```json) from the input if present",
+      "Remove any explanatory text or commentary before or after the JSON",
+      "Ensure output begins with '{' and ends with '}' with nothing before or after",
+      "Output only the raw JSON with no introductions, explanations, or commentary"
+    ]
+  },
+  "emphasis": "This tool must maintain strict adherence to project standards while preserving the distinct purpose of each caption template. Generated or linted JSON should be syntactically perfect, structurally optimized, and comprehensively address all requirements for its specific template type. The output must be raw JSON ONLY, with NO markdown formatting, code fences, introductory text, explanations, or any other non-JSON content. DO NOT include phrases like 'Here is the JSON', 'I'll fix this JSON', or similar statements. The output must begin with the opening curly brace '{' and end with the closing curly brace '}' with nothing before or after. The output should function as a professional-grade prompt for text-to-image diffusion model training that can be directly ingested by JSON parsers without additional cleaning."
+}

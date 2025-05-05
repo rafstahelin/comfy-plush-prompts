@@ -1,0 +1,91 @@
+{
+  "task": "Caption_Environment_Pure",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Generate a technically precise analysis focusing EXCLUSIVELY on the ENVIRONMENT and SPATIAL ELEMENTS. Do NOT describe any people, figures, or human presence whatsoever, even when they appear in the image. The caption must function as professional documentation of spatial qualities, lighting, materials, and artistic context.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 250 tokens",
+  "structure": {
+    "opening_identification": "Begin with a direct identification of the environment type (e.g., 'Minimalist architectural interior featuring...')",
+    "spatial_analysis": "Describe the fundamental geometric forms, volumes, scale, and spatial organization",
+    "lighting_qualities": "Detail the sources, quality, color, and behavior of light within the space",
+    "material_examination": "Analyze the textures, surfaces, materials, and their physical properties",
+    "atmospheric_elements": "Describe the mood, temperature, acoustic qualities, and sensory aspects",
+    "design_context": "Reference relevant architectural movements, design influences, and cultural significance"
+  },
+  "subject_isolation": {
+    "approach": "Treat the environment as the exclusive subject, completely ignoring any human presence",
+    "format": "Begin with direct environment identification focusing on spatial qualities",
+    "prohibited_references": [
+      "people", "person", "figure", "human", "performer", "audience", "visitor", "tourist",
+      "crowd", "group", "individual", "man", "woman", "child", "adult", "elderly",
+      "user", "occupant", "resident", "pedestrian", "viewer", "spectator", "attendee",
+      "staff", "worker", "employee", "customer", "client", "shopper", "guest",
+      "clothing", "outfit", "costume", "accessories", "fashion", "dress", "suit",
+      "posing", "standing", "sitting", "walking", "moving", "dancing", "performing"
+    ]
+  },
+  "tone": {
+    "voice": "Technical spatial design expert with emphasis on architectural and atmospheric qualities",
+    "approach": "Analytically precise while capturing sensory and experiential dimensions",
+    "terminology": "Employ specific architectural, design, and material science vocabulary",
+    "perspective": "Present as objective documentation for design archives or professional reference"
+  },
+  "technical_terminology": {
+    "spatial_elements": [
+      "orthogonal", "linear", "radial", "grid", "symmetrical", "asymmetrical", "hierarchical",
+      "centralized", "clustered", "axial", "enfilade", "void", "negative space", "positive space",
+      "compression", "expansion", "rhythm", "repetition", "articulation", "threshold"
+    ],
+    "architectural_features": [
+      "colonnade", "arcade", "arch", "vault", "dome", "pilaster", "cornice", "capital",
+      "soffit", "fascia", "balustrade", "parapet", "clerestory", "fenestration", "oculus",
+      "cantilever", "curtain wall", "mezzanine", "atrium", "portico", "vestibule", "nave"
+    ],
+    "lighting_terminology": [
+      "ambient", "diffuse", "direct", "indirect", "wash", "gradient", "chiaroscuro",
+      "cove lighting", "pendant", "sconce", "recessed", "track lighting", "grazing",
+      "backlighting", "sidelight", "spotlight", "downlight", "uplighting", "luminosity"
+    ],
+    "material_properties": [
+      "translucent", "transparent", "opaque", "reflective", "matte", "gloss", "honed",
+      "polished", "brushed", "patina", "weathered", "pristine", "textured", "smooth",
+      "tactile", "porous", "dense", "monolithic", "composite", "laminated", "veneer"
+    ]
+  },
+  "design_references": {
+    "architectural_movements": [
+      "Modernism", "Brutalism", "Minimalism", "Deconstructivism", "Bauhaus", "International Style",
+      "Postmodernism", "Art Deco", "Art Nouveau", "Gothic", "Renaissance", "Baroque",
+      "Neoclassical", "Victorian", "Organic Architecture", "High-Tech", "Parametricism"
+    ],
+    "spatial_designers": [
+      "Tadao Ando", "Zaha Hadid", "Le Corbusier", "Frank Lloyd Wright", "Mies van der Rohe",
+      "Louis Kahn", "Carlo Scarpa", "Peter Zumthor", "Alvar Aalto", "Luis Barragán",
+      "Jean Nouvel", "Rem Koolhaas", "Herzog & de Meuron", "SANAA", "Studio Mumbai"
+    ],
+    "lighting_designers": [
+      "James Turrell", "Olafur Eliasson", "Dan Flavin", "Richard Kelly", "Ingo Maurer",
+      "Hervé Descottes", "Motoko Ishii", "Ross Lovegrove", "Bruce Munro", "Johanna Grawunder"
+    ]
+  },
+  "example": "Within an infinite black void, a precisely defined cubic volume commands attention through its saturated crimson presence. Two parallel planes - floor and ceiling - are subdivided by a reflective grid system, their glossy surfaces amplifying the intensity of the monochromatic red light. The space exists as a self-contained universe, simultaneously claustrophobic and limitless. This striking installation echoes the bold geometries of Constructivist stage design while channeling the metaphysical intensity of James Turrell's light works. The environment pulses with theatrical potential, its blood-red surfaces creating an atmosphere of ritualistic significance against the encompassing darkness. The sharp linear elements of the grid system create a rational counterpoint to the emotional saturation of the color, establishing a tension between mathematical precision and sensory immersion that characterizes the most impactful spatial interventions. Acoustically, one imagines the space possessing a dampened quality where sound might be absorbed by the void yet amplified within the cubic volume, enhancing its phenomenological impact.",
+  "best_practices": [
+    "Maintain exclusive focus on spatial and environmental elements with zero human references",
+    "Begin with clear identification of the environment type and primary spatial characteristics",
+    "Use precise technical terminology for architectural elements, lighting, and materials",
+    "Analyze the three-dimensional qualities and spatial relationships",
+    "Note atmospheric conditions and sensory aspects of the environment",
+    "Reference specific design traditions and influences when evident",
+    "Discuss material properties and surface qualities in detail",
+    "Consider the cultural and historical context of the design approach"
+  ],
+  "compliance_checklist": [
+    "Verify ZERO references to any people or human presence remain",
+    "Confirm opening identification focuses exclusively on spatial qualities",
+    "Check technical accuracy of architectural, lighting, and material terminology",
+    "Assess appropriateness of atmospheric and sensory descriptions",
+    "Validate structural coherence and exclusive focus on environment as subject"
+  ],
+  "emphasis": "This caption must function as professional environmental documentation focused SOLELY on the spatial, material, and atmospheric qualities of the setting, completely independent of any human presence or activity. The content will be used specifically for training diffusion image generation models to understand the relationship between detailed architectural/environmental text descriptions and visual outputs."
+}

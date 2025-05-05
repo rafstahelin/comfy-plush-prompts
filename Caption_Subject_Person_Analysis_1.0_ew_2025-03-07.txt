@@ -1,0 +1,76 @@
+{
+  "task": "Caption_Subject_Person_Analysis",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Generate a technically precise analysis focusing 100% EXCLUSIVELY on the SUBJECT PERSON. Do NOT describe the environment, outfit, photographic style, or any elements other than the person themselves. The caption must function as a comprehensive description of the individual's physical characteristics and visual presence.",
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 250 tokens",
+  "structure": {
+    "opening_identification": "Begin with a basic demographic identification (e.g., 'Young adult woman with...')",
+    "facial_features": "Describe key facial characteristics, structure, and prominent features",
+    "hair_analysis": "Detail the hair style, color, texture, and arrangement",
+    "makeup_elements": "Describe makeup application if present, including colors and style",
+    "expression_presence": "Note facial expression, emotional quality, and gaze direction",
+    "perceived_demographics": "Include approximate age range and gender presentation",
+    "distinctive_elements": "Highlight any unique or notable features of the individual"
+  },
+  "subject_focus": {
+    "approach": "Treat the person as the exclusive subject, completely ignoring all other elements",
+    "format": "Begin with clear demographic identification focusing on the individual",
+    "prohibited_references": [
+      "outfit", "clothing", "accessories", "jewelry", "fashion", "attire",
+      "background", "setting", "location", "environment", "venue", "scene",
+      "lighting setup", "camera angle", "photographic style", "composition",
+      "props", "furniture", "decorations", "equipment", "objects",
+      "other people", "group dynamics", "interactions", "activities"
+    ]
+  },
+  "tone": {
+    "voice": "Objective observer focused solely on physical characteristics",
+    "approach": "Descriptive and factual without subjective judgments about appearance",
+    "terminology": "Use clear, precise terminology for facial features and physical attributes",
+    "perspective": "Present as neutral documentation of the subject's visual presence"
+  },
+  "technical_terminology": {
+    "facial_structures": [
+      "angular", "rounded", "oval", "heart-shaped", "square", "rectangular", "diamond",
+      "prominent", "defined", "soft", "sharp", "symmetrical", "asymmetrical",
+      "high cheekbones", "hollow cheeks", "full cheeks", "pronounced jawline"
+    ],
+    "hair_descriptors": [
+      "straight", "wavy", "curly", "coily", "kinky", "textured", "smooth",
+      "bob", "pixie", "layered", "blunt-cut", "tapered", "fade", "undercut",
+      "updo", "braided", "twisted", "natural", "relaxed", "fine", "thick",
+      "voluminous", "sleek", "tousled", "short", "medium-length", "long"
+    ],
+    "makeup_approaches": [
+      "natural", "minimal", "bold", "dramatic", "graphic", "smoky", "cat-eye",
+      "monochromatic", "colorful", "contoured", "dewy", "matte", "glossy",
+      "avant-garde", "editorial", "classic", "vintage", "contemporary"
+    ],
+    "expression_elements": [
+      "smiling", "serious", "pensive", "contemplative", "neutral", "emotive",
+      "direct gaze", "averted gaze", "intense", "soft", "confident", "relaxed",
+      "animated", "reserved", "expressive", "composed", "candid"
+    ]
+  },
+  "example": "Young adult woman with defined facial features and a strong bone structure, characterized by prominent cheekbones and a squared jawline. Her dark, straight hair is styled in a sleek bob cut with a precise center part, falling just below chin-length with blunt ends. The makeup application features a bold, editorial approach with vibrant red pigment applied in a diffused, gradient effect across the upper face, creating a striking mask-like appearance that extends from the forehead down to the cheekbone area. The saturated crimson color is applied with varying intensity, concentrated most heavily above the brow area and diffusing outward with a stippled effect. Her expression remains neutral with a direct, intense gaze and softly parted lips. The overall impression is one of striking visual presence enhanced by the high-contrast juxtaposition between the rich red pigmentation and her natural complexion.",
+  "best_practices": [
+    "Maintain exclusive focus on the person without describing any external elements",
+    "Begin with clear demographic identification of the individual",
+    "Use precise terminology for facial features, hair, and makeup elements",
+    "Analyze distinctive characteristics that define the person's appearance",
+    "Note expression and perceived emotional quality when relevant",
+    "Describe physical attributes factually without subjective value judgments",
+    "Focus on unique elements that distinguish this individual",
+    "Balance technical precision with natural language description"
+  ],
+  "compliance_checklist": [
+    "Verify ZERO references to environment, clothing, or photographic elements remain",
+    "Confirm opening identification follows required structure",
+    "Check appropriateness and accuracy of physical descriptions",
+    "Validate comprehensive coverage of key aspects (face, hair, expression)",
+    "Ensure focus remains exclusively on the subject person throughout"
+  ],
+  "emphasis": "The ONLY subject of this caption is the PERSON depicted. The caption must function as professional documentation focused solely on the individual's physical characteristics and visual presence, completely independent of their environment, clothing, or the photographic context. The content will be used specifically for training diffusion image generation models to understand the relationship between detailed text descriptions and visual depictions of people."
+}

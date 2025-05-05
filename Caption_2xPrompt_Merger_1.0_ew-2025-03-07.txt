@@ -1,0 +1,147 @@
+{
+  "task": "Caption_2xPrompt_Merger",
+  "version": "1.0",
+  "creation_date": "2025-03-07",
+  "last_updated": "2025-03-07",
+  "description": "Merge two complementary TEXT CAPTIONS into a cohesive new caption describing a novel imagined image. This process requires TWO TEXT INPUTS and produces ONE OUTPUT CAPTION that intelligently combines elements from both sources.",
+  "input_requirements": {
+    "input_1": "First text caption (required)",
+    "input_2": "Second text caption (required)"
+  },
+  "input_defaults": {
+    "caption_hierarchy": "If unclear, treat first caption as subject-focused and second caption as environment/style-focused"
+  },
+  "output_format": "One continuous paragraph in natural English, no escape characters, maximum 300 tokens",
+  
+  "analysis_phase": {
+    "caption_role_identification": {
+      "description": "Determine the primary role and focus of each input caption",
+      "possible_roles": {
+        "subject_description": "Focus on person, character, or primary object",
+        "environment_description": "Focus on setting, background, location",
+        "style_reference": "Focus on artistic style, photographic technique, rendering approach",
+        "mood_atmosphere": "Focus on emotional tone, lighting quality, ambiance",
+        "action_narrative": "Focus on activity, story moment, interaction",
+        "technical_specification": "Focus on medium, process, technical details"
+      }
+    },
+    "caption_content_analysis": {
+      "subject_focused_indicators": [
+        "Emphasis on person/character description",
+        "Details about facial features, hair, expression",
+        "Description of pose, clothing, or personal attributes",
+        "Minimal or no mention of environment/setting",
+        "Focus on individual rather than context"
+      ],
+      "environment_focused_indicators": [
+        "Emphasis on location, setting, or background",
+        "Details about spatial qualities, materials, architecture",
+        "Description of natural elements, weather, time of day",
+        "Minimal or no mention of specific people/characters",
+        "Focus on atmosphere and surroundings"
+      ],
+      "style_focused_indicators": [
+        "Emphasis on artistic technique or approach",
+        "Details about medium, processing, or creative direction",
+        "Description of visual treatment, aesthetic qualities",
+        "Reference to artistic traditions or influences",
+        "Focus on how something is depicted rather than what"
+      ]
+    },
+    "complementarity_assessment": {
+      "description": "Evaluate how the captions complement each other",
+      "complementarity_types": {
+        "subject_in_environment": "One caption describes subject, other describes setting",
+        "subject_with_style": "One caption describes subject, other describes artistic treatment",
+        "environment_with_style": "One caption describes setting, other describes artistic treatment",
+        "technical_with_content": "One caption describes technical aspects, other describes content",
+        "action_in_context": "One caption describes action, other describes context",
+        "mood_applied_to_content": "One caption describes mood, other describes what it applies to"
+      }
+    }
+  },
+  
+  "integration_strategy": {
+    "content_hierarchy": {
+      "description": "Establish logical hierarchy for caption elements",
+      "hierarchy_options": {
+        "subject_primary": "Center description around subject with environment/style as supporting elements",
+        "environment_primary": "Center description around environment with subject/style as supporting elements",
+        "style_primary": "Center description around artistic approach with subject/environment as supporting elements",
+        "narrative_primary": "Center description around action/story with subject/environment as supporting elements",
+        "balanced_approach": "Give equal weight to complementary elements in unified description"
+      }
+    },
+    "relationship_definition": {
+      "description": "Define logical relationship between elements from different captions",
+      "relationship_types": {
+        "placement": "Subject positioned within environment",
+        "interaction": "Subject interacting with environment", 
+        "stylistic_treatment": "Content rendered through particular style",
+        "mood_influence": "Elements affected by particular mood/atmosphere",
+        "technical_rendering": "Content captured/created through specific technique",
+        "conceptual_framing": "Elements united by conceptual approach"
+      }
+    }
+  },
+  
+  "fusion_process": {
+    "phase_1_analysis": {
+      "description": "Analyze both captions to determine their primary focus and content",
+      "steps": [
+        "Identify key subjects, objects, environments, and style elements in each caption",
+        "Determine the primary focus of each caption (subject, environment, style, etc.)",
+        "Assess how the captions naturally complement each other",
+        "Identify potential points of integration and conflict"
+      ]
+    },
+    "phase_2_strategy": {
+      "description": "Develop an integration strategy based on caption complementarity",
+      "steps": [
+        "Determine appropriate content hierarchy based on caption strengths",
+        "Define specific relationships between elements from different captions",
+        "Identify which elements may need adaptation for coherent integration",
+        "Plan linguistic bridges to connect elements seamlessly"
+      ]
+    },
+    "phase_3_synthesis": {
+      "description": "Create a unified caption that cohesively integrates elements from both sources",
+      "steps": [
+        "Draft opening that establishes primary framework (subject, environment, or style)",
+        "Integrate complementary elements with appropriate transitions",
+        "Apply consistent technical and stylistic approach throughout description",
+        "Ensure all key elements from both captions are represented appropriately"
+      ]
+    },
+    "phase_4_refinement": {
+      "description": "Refine the merged caption to ensure coherence and balance",
+      "steps": [
+        "Review for awkward transitions or forced connections",
+        "Verify consistent tone and style throughout",
+        "Ensure description reads as a single coherent image",
+        "Check that the imagined image is plausible and visually coherent"
+      ]
+    }
+  },
+  
+  "examples": [
+    {
+      "caption1": "Young woman with East Asian features and defined cheekbones. Straight black hair in a precise chin-length bob with center part. Neutral expression with direct gaze.",
+      "caption2": "Dramatic sunset environment with gradient sky transitioning from deep blue to fiery orange at the horizon. Golden hour lighting creating warm ambient glow with long shadows. Atmospheric haze softening distant elements.",
+      "merged": "A striking portrait of a young woman with East Asian features and defined cheekbones, her straight black hair precisely cut in a chin-length bob with perfect center part, photographed against a dramatic sunset sky. Her neutral expression and direct gaze create compelling contrast with the emotionally charged environment, where gradient colors transition from deep blue overhead to fiery orange at the horizon. Golden hour lighting bathes her face in warm amber tones, accentuating her refined bone structure while casting gentle, elongated shadows. The atmospheric haze softens the background elements, creating a dreamlike quality that frames the subject's crisp, detailed features in otherworldly luminosity."
+    }
+  ],
+  
+  "compliance_checklist": [
+    "Confirms TWO text captions have been provided as input",
+    "Clearly identifies and respects the different roles of input captions",
+    "Creates logical relationships between elements from different captions",
+    "Maintains a consistent visual language throughout the merged description",
+    "Ensures the caption describes ONE cohesive image, not two separate concepts",
+    "Balances elements from both source captions appropriately",
+    "Creates believable integration that feels intentional, not forced",
+    "Maintains technical accuracy and plausibility in the merged description"
+  ],
+  
+  "emphasis": "This tool REQUIRES TWO TEXT CAPTIONS as input. It produces a single cohesive description of an imagined new image that intelligently combines elements from both captions. When in doubt, treat the first caption as subject-focused and the second caption as environment or style-focused."
+}
